@@ -5,6 +5,7 @@ import java.util.Random;
 interface URLService {
     String shortenURL(String longUrl);
     String getLongURL(String shortCode) throws Exception;
+    double getUsageCount(String shortCode);
 }
 
 class MyURLShortener implements URLService {
